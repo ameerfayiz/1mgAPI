@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "fb8c30fc-230d-4de8-ba49-0acf3477bba7",
+		"name": "identity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth_create_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Platform",
+						"value": "Android-13.7.0"
+					},
+					{
+						"key": "X-Access-Key",
+						"value": "1mg_client_access_key"
+					},
+					{
+						"key": "X-Device-Id",
+						"value": "dc1c591b98c7d941"
+					},
+					{
+						"key": "X-OS-Version",
+						"value": "11"
+					},
+					{
+						"key": "X-Visitor-Id",
+						"value": "eb06967d-cd6d-4263-c275-73a47ec0cb43_acce55_1638951728"
+					},
+					{
+						"key": "X-City",
+						"value": "New Delhi"
+					},
+					{
+						"key": "device-info",
+						"value": "OnePlus/ONEPLUS A6010/30/11"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"dhananjay.gambhir@hcl.com\"\n}"
+				},
+				"url": {
+					"raw": "https://earthapi.1mg.com/api/v6/create_token_email",
+					"protocol": "https",
+					"host": [
+						"earthapi",
+						"1mg",
+						"com"
+					],
+					"path": [
+						"api",
+						"v6",
+						"create_token_email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth_verify_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Platform",
+						"value": "android",
+						"type": "text"
+					},
+					{
+						"key": "X-Access-Key",
+						"value": "1mg_client_access_key",
+						"type": "text"
+					},
+					{
+						"key": "X-Device-Id",
+						"value": "dc1c591b98c7d941",
+						"type": "text"
+					},
+					{
+						"key": "X-OS-Version",
+						"value": "11",
+						"type": "text"
+					},
+					{
+						"key": "X-Visitor-Id",
+						"value": "eb06967d-cd6d-4263-c275-73a47ec0cb43_acce55_1638951728",
+						"type": "text"
+					},
+					{
+						"key": "X-City",
+						"value": "New Delhi",
+						"type": "text"
+					},
+					{
+						"key": "device-info",
+						"value": "OnePlus/ONEPLUS A6010/30/11",
+						"type": "text"
+					},
+					{
+						"key": "X-CLIENT",
+						"value": "mobileweb",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"dhananjay.gambhir@hcl.com\",\n    \"verification_token\": \"975186\"\n}"
+				},
+				"url": {
+					"raw": "https://earthapi.1mg.com/api/v6/verify_token_email",
+					"protocol": "https",
+					"host": [
+						"earthapi",
+						"1mg",
+						"com"
+					],
+					"path": [
+						"api",
+						"v6",
+						"verify_token_email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
